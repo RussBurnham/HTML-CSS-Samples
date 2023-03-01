@@ -1,0 +1,140 @@
+body {
+  box-sizing: border-box;
+  background: radial-gradient(#445 5%, #223, black);
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+#header-img {
+  max-height: 100%;
+  z-index: 999;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3em;
+  background: linear-gradient(120deg, transparent, black 90%);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  font-family: Impact;
+}
+
+#nav-bar a:hover {
+  background-color: red;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.9);
+}
+
+#video-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#video {
+  border: 1rem solid;
+  border-radius: 10px;
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.9);
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+#products a {
+  text-decoration: none;
+  color: yellow;
+  font-family: Impact;
+  font-size: 30px;
+  letter-spacing: 0.8px;
+  font-weight: normal;
+  padding-left: 1rem;
+}
+
+#products a:hover {
+  background-color: red;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.9);
+}
+
+#product-info {
+  color: rgba(255, 255, 100, 0.8);
+  grid-row: 2;
+  margin-top: 0.1rem;
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 4px solid;
+  background: linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.7));
+  font-family: Comic Sans MS;
+  font-size: 20px;
+}
+
+li {
+  margin: 0.3rem 0;
+}
+
+#product-info:last-of-type {
+  border-right: none;
+}
+
+#product-info:first-of-type {
+  border-left: 4px solid;
+}
+
+#submit-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+p:last-of-type {
+  font-family: Comic Sans MS;
+  color: yellow;
+  font-size: 20px;
+  margin-top: 5rem;
+}
+
+#email {
+  padding: 6px 20px;
+}
+
+#submit {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 24px;
+  font-family: Comic Sans MS;
+  color: yellow;
+  background: black;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}

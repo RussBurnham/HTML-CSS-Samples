@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header id="h1"><h1>Python Documentation</h1></header>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Lists">Lists</a>
+        <a class="nav-link" href="#If_Statements">If Statements</a>
+        <a class="nav-link" href="#Dictionaries">Dictionaries</a>
+        <a class="nav-link" href="#Loops">Loops</a>
+      </nav>
+      <div class="spacer1"></div>
+      <div class="spacer2"></div>
+      <section class="main-section" id="Variables">
+        <header id="h2"><h2>Variables</h2></header>
+        <p>Variables in python are very easy to create and change.</p>
+        <p>
+          Multiple assignments, constants, variables within strings are some of
+          the ways you can use variables. Below is an example of variables
+          within strings with an "f" statement.
+        </p>
+        <code>
+          <li>variable = "John Doe"</li>
+          <li>print(f"Hello {variable}")</li>
+          <li>Hello John Doe</li>
+        </code>
+      </section>
+      <section class="main-section" id="Lists">
+        <header id="h2"><h2>Lists</h2></header>
+        <p>
+          Lists are created with brackets "[]". You can do many actions with
+          lists including pop, remove, append, del, and sort.
+        </p>
+        <p>
+          First, understand you need to understand how to index into a list. The
+          first element in a list is always index 0.
+        </p>
+        <code>
+          <li>pizza_list = ["pepperoni", "cheese", "supreme"]</li>
+          <li>print(pizza_list[0])</li>
+          <li>pepperoni</li>
+        </code>
+      </section>
+      <section class="main-section" id="If_Statements">
+        <header id="h2"><h2>If Statements</h2></header>
+        <p>
+          If statements are a set of conditions that your code must execute
+          before deciding what to do next.
+        </p>
+        <p>In python, we use "if", "elif", and "else" for if statements.</p>
+        <code>
+          <li>age = 21</li>
+          <li>if age < 18:</li>
+          <li id="indent">print("You are too young to vote.")</li>
+          <li>elif age < 21:</li>
+          <li id="indent">print("You can vote but cannot drink alcohol.")</li>
+          <li>else:</li>
+          <li id="indent">print("You can vote and drink alcohol.")</li>
+        </code>
+      </section>
+      <section class="main-section" id="Dictionaries">
+        <header id="h2"><h2>Dictionaries</h2></header>
+        <p>Dictionaries are a series of key-value pairs.</p>
+        <p>
+          Creating dictionaries can be fairly simple and using "enumerate" is a
+          great way to grab the information from them. Below we will create a
+          dictionary called "glossary".
+        </p>
+        <code>
+          <li>glossary = {}</li>
+          <li>
+            glossary['key'] = 'small piece of shaped metal with incisions cut to
+            fit the wards of a particular lock'
+          </li>
+          <li>
+            glossary = {'key': 'small piece of shaped metal with incisions cut
+            to fit the wards of a particular lock'}
+          </li>
+        </code>
+      </section>
+      <section class="main-section" id="Loops">
+        <header id="h2"><h2>Loops</h2></header>
+        <p>Loops can be for loops or while loops.</p>
+        <p>
+          We create for loops when we want to loop through lists of information,
+          and while loops when we want the program to infinitely loop through
+          information.
+        </p>
+        <code>
+          <li>variable = 10</li>
+          <li>count = 0</li>
+          <li>while True:</li>
+          <li id="indent">count += 1</li>
+          <li id="indent">if count == variable:</li>
+          <li id="indent-twice">break</li>
+        </code>
+        <p id="reference">
+          <a
+            href="https://www.freecodecamp.org/learn/scientific-computing-with-python/"
+          >
+            Reference</a
+          >
+          for this information.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
